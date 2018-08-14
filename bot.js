@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     
-bot.user.setPresence({ game: { name: 'New Haven County', type: 0 } });
+bot.user.setPresence({ game: { name: 'dnd', type: 0 } });
     
 });
 

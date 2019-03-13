@@ -6,8 +6,16 @@ client.on('ready', () => {
  
 });
 client.on('message', message => {
-    if (message.content === '!ping') {
+    if (message.content === '+ping') {
     	message.reply('pong');
+  	}
+    client.on('message', message => {
+    if (message.content === '+help') {
+    	message.reply('Commands: +ping, +help, +owner');
+    client.on('message', message => {
+    if (message.content === '+owner') {
+    	message.reply('<@478015111668432896> Is my master.');
+  	}
   	}
 });
 
